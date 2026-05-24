@@ -1,0 +1,4 @@
+*.o
+ft_malcolm
+test_ft_malcolm
+.DS_Store
