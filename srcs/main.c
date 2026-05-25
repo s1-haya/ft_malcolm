@@ -19,6 +19,8 @@ int	main(int argc, char **argv)
 	}
 	if (!validate_ft_malcolm(argv, &config))
 		return (1);
+	if (!check_root_privilege())
+		return (1);
 	printf("Arguments are valid.\n");
 	return (0);
 }

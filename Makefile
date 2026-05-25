@@ -15,7 +15,10 @@ TEST_HDRS = $(TESTS_DIR)/test_ft_malcolm.h
 SRCS = srcs/main.c \
        srcs/parse_ipv4.c \
        srcs/parse_mac.c \
-       srcs/validate_args.c
+       srcs/validate_args.c \
+       srcs/check_root_privilege.c \
+	   srcs/create_arp_socket.c
+
 
 OBJS = $(SRCS:.c=.o)
 

@@ -2,7 +2,7 @@
 
 void	print_parse_mac_error(const char *mac)
 {
-	printf("ft_malcolm: invalid mac address: (%s)\n", mac);
+	printf(ERROR_PREFIX "invalid mac address: (%s)\n", mac);
 }
 
 static int	is_hex_digit(char c)

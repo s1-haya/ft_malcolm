@@ -5,6 +5,7 @@
 # include <stdio.h>
 
 # define MAC_ADDR_LEN 6
+# define ERROR_PREFIX "ft_malcolm: "
 
 typedef struct s_malcolm_config
 {
@@ -22,5 +23,8 @@ void	print_parse_mac_error(const char *mac);
 
 
 int		validate_ft_malcolm(char **argv, t_malcolm_config *config);
+int		check_root_privilege(void);
+
+int	create_arp_socket(void);
 
 #endif
