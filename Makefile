@@ -17,7 +17,11 @@ SRCS = srcs/main.c \
        srcs/parse_mac.c \
        srcs/validate_args.c \
        srcs/check_root_privilege.c \
-	   srcs/create_arp_socket.c
+	   srcs/create_arp_socket.c \
+	   srcs/get_available_interface.c \
+	   srcs/wait_arp_request.c \
+	   srcs/send_arp_reply.c \
+	   srcs/signal_handler.c
 
 
 OBJS = $(SRCS:.c=.o)
